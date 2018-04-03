@@ -82,14 +82,14 @@ function fakeMessage() {
     return false;
   }
   $(
-    '<div class="message loading new"><figure class="avatar"><img src="./assests/download.png" /></figure><span></span></div>'
+    '<div class="message loading new"><figure class="avatar"><img src="./assets/download.png" /></figure><span></span></div>'
   ).appendTo($(".mCSB_container"));
   updateScrollbar();
 
   setTimeout(function() {
     $(".message.loading").remove();
     $(
-      '<div class="message new"><figure class="avatar"><img src="./assests/download.png" /></figure>' +
+      '<div class="message new"><figure class="avatar"><img src="./assets/download.png" /></figure>' +
         Fake[i] +
         "</div>"
     )
